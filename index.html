@@ -158,6 +158,8 @@ section { position: relative; overflow: hidden; }
 .about-video-card {
   position: relative;
   width: clamp(270px, 33vw, 450px);
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
   flex-shrink: 0;
   box-shadow: 8px 8px 0 var(--pink);
   outline: 1px solid var(--pink);
@@ -167,7 +169,7 @@ section { position: relative; overflow: hidden; }
   cursor: none;
 }
 .about-video-card:hover { transform: rotate(0deg) scale(1.02); box-shadow: 12px 12px 0 var(--pink); }
-.about-video { display: block; width: 100%; height: auto; object-fit: contain; }
+.about-video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .about-video-progress { position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: rgba(240,168,184,0.2); }
 .about-video-progress-bar { height: 100%; width: 0%; background: var(--pink); }
 
